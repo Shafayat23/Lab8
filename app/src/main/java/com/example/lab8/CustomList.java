@@ -49,16 +49,17 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
-    public void addCity(City city){
-        cities.add(city);
-
-    }
     boolean hasCity(City city) {
         if (cities.contains(city)){
             return true;
         }
         return false;
     }
+    public void addCity(City city){
+        cities.add(city);
+
+    }
+
 
 
 
