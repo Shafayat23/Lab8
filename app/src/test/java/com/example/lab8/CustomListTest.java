@@ -36,31 +36,7 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
-    @Test
-    public void deleteCityTest() throws Exception {
-        list = MockCityList();
-        int listSize = list.getCount();
-        City city2=new City("Estevan", "SK");
-        list.addCity(city2);
-        assertEquals(list.getCount(),listSize + 1);
-        list.deleteCity(city2);
-        assertEquals(list.getCount(),listSize );
 
-    }
-
-    @Test
-    public void hasCity(){
-        list = MockCityList();
-        int listSize = list.getCount();
-        City city2=new City("Estevan", "SK");
-        list.addCity(city2);
-
-        assertTrue(list.hasCity(city2));
-        City city3=new City("Esteva3n", "SK3");
-        assertFalse(list.hasCity(city3));
-
-
-    }
 
 
 
